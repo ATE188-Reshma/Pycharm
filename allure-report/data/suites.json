@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Automation",
+    "children" : [ {
+      "name" : "test_aa",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "dfe8cf1a707bba53",
+        "parentUid" : "c1a6284d5f6ab0f7e1bb70097a356259",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646657800673,
+          "stop" : 1646657822611,
+          "duration" : 21938
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 4,
+        "retriesStatusChange" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c1a6284d5f6ab0f7e1bb70097a356259"
+    } ],
+    "uid" : "e77a767ee031759f5556fee5c8de8a23"
+  } ]
+}

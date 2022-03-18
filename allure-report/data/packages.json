@@ -1,0 +1,26 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Automation.test_aa",
+    "children" : [ {
+      "name" : "test_login",
+      "uid" : "dfe8cf1a707bba53",
+      "parentUid" : "bb10fd5bc2536d302938021f671498ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646657800673,
+        "stop" : 1646657822611,
+        "duration" : 21938
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 4,
+      "retriesStatusChange" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "Automation.test_aa"
+  } ]
+}

@@ -1,0 +1,58 @@
+{
+  "uid" : "f93f00ef55149fd2",
+  "name" : "test_login",
+  "fullName" : "Automation.test_aa#test_login",
+  "historyId" : "91b5846e100fb63837c904c7bf7681f8",
+  "time" : {
+    "start" : 1646648490858,
+    "stop" : 1646648514161,
+    "duration" : 23303
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_aa"
+  }, {
+    "name" : "host",
+    "value" : "AGD55"
+  }, {
+    "name" : "thread",
+    "value" : "7028-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Automation.test_aa"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "login" ]
+  },
+  "source" : "f93f00ef55149fd2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,171 @@
+{
+  "8c7cd97eb74123004d63373e28459909" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "3d6c34720b898933",
+      "reportUrl" : "http://localhost:8081/job/Automation/7/allure/#testresult/3d6c34720b898933",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640165087,
+        "stop" : 1646640165087,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "79432dc36e225b2f",
+      "reportUrl" : "http://localhost:8081/job/Automation/6/allure/#testresult/79432dc36e225b2f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640165087,
+        "stop" : 1646640165087,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c7c27c4bf6afc4b4",
+      "reportUrl" : "http://localhost:8081/job/Automation/5/allure/#testresult/c7c27c4bf6afc4b4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640165087,
+        "stop" : 1646640165087,
+        "duration" : 0
+      }
+    } ]
+  },
+  "91b5846e100fb63837c904c7bf7681f8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 4
+    },
+    "items" : [ {
+      "uid" : "d804e6798ed08a56",
+      "reportUrl" : "http://localhost:8081/job/Automation/11/allure/#testresult/d804e6798ed08a56",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646648490858,
+        "stop" : 1646648514161,
+        "duration" : 23303
+      }
+    }, {
+      "uid" : "a3a7b02e210dd125",
+      "reportUrl" : "http://localhost:8081/job/Automation/10/allure/#testresult/a3a7b02e210dd125",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1646648385812,
+        "stop" : 1646648385813,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "353ab312bfe875a1",
+      "reportUrl" : "http://localhost:8081/job/Automation/9/allure/#testresult/353ab312bfe875a1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1646648354984,
+        "stop" : 1646648354985,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8711123ff4a245c3",
+      "reportUrl" : "http://localhost:8081/job/Automation/8/allure/#testresult/8711123ff4a245c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646647873560,
+        "stop" : 1646647897432,
+        "duration" : 23872
+      }
+    } ]
+  },
+  "2a10600929b9b012d6557bb8ceb8f377" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "f7e5c18b5d8495bf",
+      "reportUrl" : "http://localhost:8081/job/Automation/7/allure/#testresult/f7e5c18b5d8495bf",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640160655,
+        "stop" : 1646640160655,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ea64a5e1574039f3",
+      "reportUrl" : "http://localhost:8081/job/Automation/6/allure/#testresult/ea64a5e1574039f3",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640160655,
+        "stop" : 1646640160655,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "82e283b7cde566db",
+      "reportUrl" : "http://localhost:8081/job/Automation/5/allure/#testresult/82e283b7cde566db",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 97\nCurrent browser version is 99.0.4844.51 with binary path C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\nStacktrace:\nBacktrace:\n\tOrdinal0 [0x0035FDC3+2555331]\n\tOrdinal0 [0x002F77F1+2127857]\n\tOrdinal0 [0x001F2E08+1060360]\n\tOrdinal0 [0x002119CA+1186250]\n\tOrdinal0 [0x0020D825+1169445]\n\tOrdinal0 [0x0020AFC1+1159105]\n\tOrdinal0 [0x0023C22F+1360431]\n\tOrdinal0 [0x0023BE9A+1359514]\n\tOrdinal0 [0x00237976+1341814]\n\tOrdinal0 [0x002136B6+1193654]\n\tOrdinal0 [0x00214546+1197382]\n\tGetHandleVerifier [0x004F9622+1619522]\n\tGetHandleVerifier [0x005A882C+2336844]\n\tGetHandleVerifier [0x003F23E1+541697]\n\tGetHandleVerifier [0x003F1443+537699]\n\tOrdinal0 [0x002FD18E+2150798]\n\tOrdinal0 [0x00301518+2168088]\n\tOrdinal0 [0x00301660+2168416]\n\tOrdinal0 [0x0030B330+2208560]\n\tBaseThreadInitThunk [0x764AFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x77997A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x77997A6E+238]\n\t(No symbol) [0x00000000]",
+      "time" : {
+        "start" : 1646640160655,
+        "stop" : 1646640160655,
+        "duration" : 0
+      }
+    } ]
+  },
+  "aafaab3907e4d82fff0ee76988cd15ea" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    },
+    "items" : [ {
+      "uid" : "bc238973adf4a899",
+      "reportUrl" : "http://localhost:8081/job/Automation/7/allure/#testresult/bc238973adf4a899",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646645010977,
+        "stop" : 1646645010977,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cf2281c9e407fe29",
+      "reportUrl" : "http://localhost:8081/job/Automation/6/allure/#testresult/cf2281c9e407fe29",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646642823247,
+        "stop" : 1646642823248,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5223a46827c62581",
+      "reportUrl" : "http://localhost:8081/job/Automation/5/allure/#testresult/5223a46827c62581",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646642577922,
+        "stop" : 1646642577922,
+        "duration" : 0
+      }
+    } ]
+  }
+}

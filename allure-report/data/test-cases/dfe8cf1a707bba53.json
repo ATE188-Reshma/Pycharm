@@ -1,0 +1,143 @@
+{
+  "uid" : "dfe8cf1a707bba53",
+  "name" : "test_login",
+  "fullName" : "Automation.test_aa#test_login",
+  "historyId" : "91b5846e100fb63837c904c7bf7681f8",
+  "time" : {
+    "start" : 1646657800673,
+    "stop" : 1646657822611,
+    "duration" : 21938
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 4,
+  "retriesStatusChange" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Automation"
+  }, {
+    "name" : "suite",
+    "value" : "test_aa"
+  }, {
+    "name" : "host",
+    "value" : "AGD55"
+  }, {
+    "name" : "thread",
+    "value" : "1980-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Automation.test_aa"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f93f00ef55149fd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646648490858,
+        "stop" : 1646648514161,
+        "duration" : 23303
+      }
+    }, {
+      "uid" : "ca872eb71311c69b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1646648385812,
+        "stop" : 1646648385813,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bba0407b9842965d",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+      "time" : {
+        "start" : 1646648354984,
+        "stop" : 1646648354985,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1963d111567f6164",
+      "status" : "passed",
+      "time" : {
+        "start" : 1646647873560,
+        "stop" : 1646647897432,
+        "duration" : 23872
+      }
+    } ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "d804e6798ed08a56",
+        "reportUrl" : "http://localhost:8081/job/Automation/11/allure/#testresult/d804e6798ed08a56",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646648490858,
+          "stop" : 1646648514161,
+          "duration" : 23303
+        }
+      }, {
+        "uid" : "a3a7b02e210dd125",
+        "reportUrl" : "http://localhost:8081/job/Automation/10/allure/#testresult/a3a7b02e210dd125",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+        "time" : {
+          "start" : 1646648385812,
+          "stop" : 1646648385813,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "353ab312bfe875a1",
+        "reportUrl" : "http://localhost:8081/job/Automation/9/allure/#testresult/353ab312bfe875a1",
+        "status" : "broken",
+        "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+        "time" : {
+          "start" : 1646648354984,
+          "stop" : 1646648354985,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "8711123ff4a245c3",
+        "reportUrl" : "http://localhost:8081/job/Automation/8/allure/#testresult/8711123ff4a245c3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1646647873560,
+          "stop" : 1646647897432,
+          "duration" : 23872
+        }
+      } ]
+    },
+    "tags" : [ "login" ]
+  },
+  "source" : "dfe8cf1a707bba53.json",
+  "parameterValues" : [ ]
+}
