@@ -12,7 +12,8 @@ cursor = dbconnect.cursor()
 # Required Script
 updatequery = "update users set smobileno='1234567890'"
 update = cursor.execute(updatequery)
-
+# to perform actions in actual db
+dbconnect.commit()
 selectquery = "select * from users"
 select = cursor.execute(selectquery)
 print(select)

@@ -1,97 +1,210 @@
 import time
 from configparser import ConfigParser
+from loguru import logger
+from TestMethod import AuditTrial
 from selenium.webdriver.common.by import By
+
+from TestMethod.AuditTrial import auditTrail
 from Utiliser import ReusableMethod
 from TestMethod import ContainerType
 from TestMethod import LaunchLims
+import os
 
 accessmethod1 = LaunchLims
-accessmethod2 = ContainerType
+accessmethod2 = AuditTrial
+accessmethod3 = ContainerType
 
 driver = accessmethod1.launchLIMS("launch browser", "browser link", "credentials locator", "credentials Values")
 driver.implicitly_wait(10)
-accessmethod2.containerType_Prequesite(driver, "basic", "module screen")
-driver.implicitly_wait(10)
-# accessmethod2.containerType_Add(driver, "screen locator", "screen value")
+time.sleep(5)
+accessmethod3.containerType_Prequesite(driver, "basic", "module screen")
+time.sleep(5)
 
 
-objectRepository = ConfigParser()
-objectRepository.read("C:\\Users\\ate142\\PycharmProjects\\pythonProject1\\ObjectRepository\\Element_ContainerType.ini")
+
+
+objectRepository2 = ConfigParser()
+objectRepository2.read("C:\\Users\\ate142\\PycharmProjects\\pythonProject1\\ObjectRepository\\Element_PageCount.ini")
+
+# auditTrail1=ConfigParser()
+# auditTrail1.read("C:\\Users\\ate142\\PycharmProjects\\pythonProject1\\ObjectRepository\\Element_AuditTrial.ini")
+
+objectRepository1 = ConfigParser()
+objectRepository1.read("C:\\Users\\ate142\\PycharmProjects\\pythonProject1\\ObjectRepository\\Element_ContainerType.ini")
 
 InputData = ConfigParser()
 InputData.read("C:\\Users\\ate142\\PycharmProjects\\pythonProject1\\InputData\\Data_ContainerType.ini")
 
-def containerType_Edit(loc_key, input_key, tag):
-    containertypexpath = objectRepository.get(loc_key, "containertype")
-    descriptionxpath = objectRepository.get(loc_key, "description")
-    savexpath = objectRepository.get(loc_key, "save")
-    containertype_editvalue = InputData.get(input_key, "editinputcontainertype")
-    description_editvalue = InputData.get(input_key, "editinputdescription")
+# to get the page count
+def count(driver, loc_key, xpath):
+    # change xpath as required
+    containertypepagecountxpath = objectRepository2.get(loc_key, xpath)
 
-    time.sleep(7)
 
-    t = driver.find_elements(By.TAG_NAME, tag)
-    tt = len (t)
+    containertypepagecount = driver.find_element(By.XPATH, containertypepagecountxpath).text
+    print(containertypepagecount)
 
-    # input("enter containertype with description: ")
-    # pass the record to edit
-    container = "Matrix For use with Tachosil fibrin sealant kits."
-    for i in range(1,tt):
-        ttt = t[i].text
-        print(ttt)
-        if container == ttt:
-            print("containertype count is",i,ttt)
-            print(i)
-            l = str(i)
-            edit = "(//span[@data-tip='Edit'])["+l+"]"
-            print(edit)
-            driver.find_element(By.XPATH, edit).click()
-            break
+    individualtext = containertypepagecount.split(' ')
+    print(individualtext)
 
-    driver.find_element(By.XPATH, containertypexpath).clear()
+    count = individualtext[4]
+
+    print(count)
+
+    count = int(count)
+
+    return count
+
+
+# Page count validation
+def countvalidation(screen, beforecount, aftercount):
+    if aftercount == beforecount+1:
+        logger.info(screen+ " count increased by 1")
+
+    elif aftercount > beforecount+1:
+        logger.info(screen+ " count increased more than 1")
+
+    elif aftercount == beforecount:
+        logger.info(screen+ " count has not increased")
+
+    elif aftercount == beforecount-1:
+        logger.info(screen+ " count decreased by 1")
+
+    elif aftercount < beforecount-1:
+        logger.info(screen+ " count decreased more than 1")
+
+def indexValidateAdd(driver, input_key):
+    # containertypeindexxpath = objectRepository1.get(loc_key, "containertypeindex")
+    containertypevalue = InputData.get(input_key, "inputcontainertype")
+    descriptionvalue = InputData.get(input_key, "inputdescription")
+    # refresh = objectRepository1.get(loc_key, "refreshbutton")
+
+    containertypeindex = driver.find_elements(By.TAG_NAME, "tr")
+    tt = len(containertypeindex)
+
+    containerdata = containertypevalue+" "+descriptionvalue
+
+    # ReusableMethod.clickXpath(driver, refresh)
+    # time.sleep(4)
+
+    if containertypeindex[1].text == containerdata:
+        logger.info("Added Container Type displayed in first index")
+
+    else:
+        # ReusableMethod.clickXpath(driver,refresh)
+        # time.sleep(2)
+        for i in range(1, tt):
+            ttt = containertypeindex[i].text
+            print(ttt)
+
+            if containerdata == ttt:
+                print("Container Type displayed in index" +str(i))
+
+
+
+
+
+# Add
+def containerTypeCountIndexAddValidation():
+    beforecount = count(driver, "containertype", "containertypepagecount")
+    accessmethod3.containerType_Add(driver, "screen locator", "screen value")
+    time.sleep(5)
+    aftercount = count(driver, "containertype", "containertypepagecount")
+    countvalidation("containerType", beforecount, aftercount)
+    time.sleep(5)
+    indexValidateAdd(driver, "screen value")
+    time.sleep(5)
+
+
+#Edit
+def containerTypeCountIndexEditValidation():
+    beforecount = count(driver, "containertype", "containertypepagecount")
+    accessmethod3.containerType_Edit(driver, "screen locator", "screen value", "tr")
+    time.sleep(5)
+    aftercount = count(driver, "containertype", "containertypepagecount")
+    countvalidation("containerType", beforecount, aftercount)
+    time.sleep(5)
+
+
+
+#Delete
+def containerTypeCountIndexDeleteValidation():
+    beforecount = count(driver, "containertype", "containertypepagecount")
+    accessmethod3.containerType_Delete(driver, "screen locator", "tr")
+    time.sleep(5)
+    aftercount = count(driver, "containertype", "containertypepagecount")
+    countvalidation("containerType", beforecount, aftercount)
+    time.sleep(5)
+
+
+# Add
+def containerTypeAddAuditTrail():
+    beforeCount = accessmethod2.auditTrailCount(driver, "audittrail")
+
     time.sleep(2)
-    ReusableMethod.sendKeysXpath(driver, containertypexpath, containertype_editvalue)
-    # ReusableMethod.sendKeysXpath(driver, descriptionxpath, description_editvalue)
-    ReusableMethod.clickXpath(driver, savexpath)
+    accessmethod3.containerType_Prequesite(driver, "basic", "module screen")
+
+    time.sleep(2)
+    accessmethod3.containerType_Add(driver, "screen locator", "screen value")
+
+    time.sleep(2)
+    afterCount = accessmethod2.auditTrailCount(driver, "audittrail")
+
+    time.sleep(3)
+    auditTrail(driver, afterCount, beforeCount, "ADD CONTAINER TYPE", "Carl Dolman", "Admin",
+               "Container Type: Soap Container;Description: container with 2 compartments;", "SYSTEM")
 
 
-def containerType_Delete(loc_key, tag):
-    containertypedeleteokxpath = objectRepository.get(loc_key, "deletepopupokbutton")
-    containertypedeletecancelxpath = objectRepository.get(loc_key, "deletepopupcancelbutton")
+#Edit
+def containerTypeEditAuditTrail():
+    time.sleep(4)
 
-    time.sleep(7)
+    beforeCount = accessmethod2.auditTrailCount(driver, "audittrail")
 
-    q = driver.find_elements(By.TAG_NAME, tag)
-    qq = len(q)
+    time.sleep(2)
+    accessmethod3.containerType_Prequesite(driver, "basic", "module screen")
 
-    # input("enter containertype with description: ")
-    container = "Mat For use with Tachosil fibrin sealant kits."
-    for i in range(1, qq):
-        qqq = q[i].text
-        print(qqq)
-        if container == qqq:
-            print("containertype count is", i, qqq)
-            print(i)
-            m = str(i)
-            delete = "(//span[@data-tip='Delete'])[" + m + "]"
-            print(delete)
-            driver.find_element(By.XPATH, delete).click()
-            break
+    time.sleep(2)
+    accessmethod3.containerType_Edit(driver, "screen locator", "screen value", "tr")
 
-    time.sleep(10)
-    # alert = driver.switch_to.alert
+    time.sleep(2)
+    afterCount = accessmethod2.auditTrailCount(driver, "audittrail")
 
-    ReusableMethod.clickXpath(driver, containertypedeleteokxpath)
+    time.sleep(3)
+    auditTrail(driver, afterCount, beforeCount, "EDIT CONTAINER TYPE", "Carl Dolman", "Admin",
+               "Container Type: Soap Container-> Mat;Description: container with 2 compartments-> matrix container;",
+               "SYSTEM")
 
 
+# Delete
+def containerTypeDeleteAuditTrail():
+    time.sleep(4)
+
+    beforeCount = accessmethod2.auditTrailCount(driver, "audittrail")
+
+    time.sleep(2)
+    accessmethod3.containerType_Prequesite(driver, "basic", "module screen")
+
+    time.sleep(2)
+    accessmethod3.containerType_Delete(driver, "screen locator", "tr")
+
+    time.sleep(2)
+    afterCount = accessmethod2.auditTrailCount(driver, "audittrail")
+
+    time.sleep(3)
+    auditTrail(driver, afterCount, beforeCount, "DELETE CONTAINER TYPE", "Carl Dolman", "Admin",
+               "Container Type: Mat;Description: matrix container;", "SYSTEM")
 
 
-
-
-
-containerType_Edit("screen locator", "screen value", "tr")
-containerType_Delete("screen locator", "tr")
-
-# pom and pytest only pending
-
-
+time.sleep(5)
+containerTypeCountIndexAddValidation()
+time.sleep(4)
+containerTypeCountIndexEditValidation()
+time.sleep(4)
+containerTypeCountIndexDeleteValidation()
+time.sleep(4)
+containerTypeAddAuditTrail()
+time.sleep(4)
+containerTypeEditAuditTrail()
+time.sleep(4)
+containerTypeDeleteAuditTrail()

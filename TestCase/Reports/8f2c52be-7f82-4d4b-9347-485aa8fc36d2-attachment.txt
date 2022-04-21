@@ -1,0 +1,37 @@
+2022-03-24 16:13:06.593 | INFO     | TestMethod.LaunchLims:launchLIMS:29 - Browser Launched
+2022-03-24 16:13:13.565 | INFO     | TestMethod.LaunchLims:launchLIMS:40 - Link passed
+2022-03-24 16:13:13.670 | INFO     | TestMethod.LaunchLims:launchLIMS:48 - Entered Login id
+2022-03-24 16:13:17.753 | INFO     | TestMethod.LaunchLims:launchLIMS:58 - Entered password
+2022-03-24 16:13:31.129 | INFO     | TestMethod.LaunchLims:launchLIMS:90 - Logged in
+2022-03-24 16:13:44.054 | INFO     | TestMethod.LaunchLims:launchLIMS:97 - Module pinned
+2022-03-24 16:13:51.733 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:14:01.819 | INFO     | TestMethod.ContainerType:containerType_Prequesite:26 - Master module clicked
+2022-03-24 16:14:01.864 | INFO     | TestMethod.ContainerType:containerType_Prequesite:30 - Basemaster module clicked
+2022-03-24 16:14:03.146 | INFO     | TestMethod.ContainerType:containerType_Prequesite:34 - Containertype screen clicked
+2022-03-24 16:14:05.400 | INFO     | TestMethod.ContainerType:containerType_Add:57 - Add button clicked
+2022-03-24 16:14:05.630 | INFO     | TestMethod.ContainerType:containerType_Add:61 - Entered ContainerType
+2022-03-24 16:14:05.990 | INFO     | TestMethod.ContainerType:containerType_Add:65 - Entered ContainerTypeDescription
+2022-03-24 16:14:07.561 | INFO     | TestMethod.ContainerType:containerType_Add:69 - ContainerType Added
+2022-03-24 16:14:16.989 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:14:19.999 | INFO     | TestMethod.AuditTrial:auditTrail:102 - Audit trail criteria 2 matched
+2022-03-24 16:14:40.288 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:14:50.347 | INFO     | TestMethod.ContainerType:containerType_Prequesite:26 - Master module clicked
+2022-03-24 16:14:50.393 | INFO     | TestMethod.ContainerType:containerType_Prequesite:30 - Basemaster module clicked
+2022-03-24 16:14:51.024 | INFO     | TestMethod.ContainerType:containerType_Prequesite:34 - Containertype screen clicked
+2022-03-24 16:15:00.165 | INFO     | TestMethod.ContainerType:containerType_Edit:110 - Edit button clicked
+2022-03-24 16:15:07.616 | INFO     | TestMethod.ContainerType:containerType_Edit:122 - ContainerType value passed for Edit
+2022-03-24 16:15:07.686 | INFO     | TestMethod.ContainerType:containerType_Edit:126 - ContainerType Edited
+2022-03-24 16:15:18.062 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:15:21.069 | INFO     | TestMethod.AuditTrial:auditTrail:102 - Audit trail criteria 2 matched
+2022-03-24 16:15:41.871 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:15:51.924 | INFO     | TestMethod.ContainerType:containerType_Prequesite:26 - Master module clicked
+2022-03-24 16:15:51.969 | INFO     | TestMethod.ContainerType:containerType_Prequesite:30 - Basemaster module clicked
+2022-03-24 16:15:52.576 | INFO     | TestMethod.ContainerType:containerType_Prequesite:34 - Containertype screen clicked
+2022-03-24 16:16:01.700 | INFO     | TestMethod.ContainerType:containerType_Delete:163 - Delete button clicked
+2022-03-24 16:16:11.825 | INFO     | TestMethod.ContainerType:containerType_Delete:168 - ContainerType Deleted
+2022-03-24 16:16:22.050 | INFO     | TestMethod.AuditTrial:auditTrailCount:54 - Count retrieved
+2022-03-24 16:16:25.056 | INFO     | TestMethod.AuditTrial:auditTrail:68 - Audit trail criteria 1 matched
+2022-03-24 16:16:25.074 | INFO     | TestMethod.AuditTrial:auditTrail:74 - Audit action is captured correctly
+2022-03-24 16:16:33.259 | INFO     | TestMethod.ContainerType:containerType_Prequesite:26 - Master module clicked
+2022-03-24 16:16:33.306 | INFO     | TestMethod.ContainerType:containerType_Prequesite:30 - Basemaster module clicked
+2022-03-24 16:16:33.904 | INFO     | TestMethod.ContainerType:containerType_Prequesite:34 - Containertype screen clicked

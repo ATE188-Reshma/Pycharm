@@ -22,6 +22,7 @@ def launchLIMS(browser, limslink, loc_key, input_key):
     userrolexpath = objectRepository.get(loc_key, "UserRole")
     logintypexpath = objectRepository.get(loc_key, "LoginType")
     loginbuttonxpath = objectRepository.get(loc_key, "loginbttn")
+    pinxpath = objectRepository.get(loc_key, "pin")
 
     try:
         driver = webdriver.Chrome(executable_path=chromebrowser)
@@ -30,46 +31,77 @@ def launchLIMS(browser, limslink, loc_key, input_key):
         driver.maximize_window()
         driver.implicitly_wait(10)
 
-        try:
+    except:
+        logger.error("Browser not launched")
+
+    try:
+
             driver.get(link)
             logger.info("Link passed")
 
+    except:
+            logger.error("link is not hit")
 
-            try:
-                ReusableMethod.clickXpath(driver, loginxpath)
-                ReusableMethod.sendKeysXpath(driver, loginxpath, loginvalue)
-                logger.info("Entered Login id")
-
-                try:
-                    time.sleep(4)
-                    ReusableMethod.clickXpath(driver, passwordxpath)
-                    ReusableMethod.sendKeysXpath(driver, passwordxpath,passwordvalue)
-                    logger.info("Entered password")
+    try:
+        ReusableMethod.clickXpath(driver, loginxpath)
+        ReusableMethod.sendKeysXpath(driver, loginxpath, loginvalue)
+        logger.info("Entered Login id")
 
 
-                    try:
+    except:
+        logger.error("unable to hit the link")
+
+    try:
+            time.sleep(4)
+            ReusableMethod.clickXpath(driver, passwordxpath)
+            ReusableMethod.sendKeysXpath(driver, passwordxpath, passwordvalue)
+            logger.info("Entered password")
+    except Exception as e:
+                    logger.error("Password has not sent, Exception occurred" + str(e))
+
+
+
+    try:
+                time.sleep(2)
+                ReusableMethod.clickXpath(driver, userrolexpath)
+                ReusableMethod.dropdownByText(driver, "Admin")
+
+    except Exception as e:
+                        logger.error("UserRole has not selected, Exception occurred" + str(e))
+
+
+
+    try:
+                    time.sleep(2)
+                    ReusableMethod.clickXpath(driver, logintypexpath)
+                    ReusableMethod.dropdownByText(driver, "Internal")
+
+    except Exception as e:
+        logger.error("LoginType has not selected, Exception occurred" + str(e))
+
+    try:
                         time.sleep(5)
                         ReusableMethod.clickXpath(driver, loginxpath)
+                        time.sleep(2)
+                        ReusableMethod.clickXpath(driver, loginxpath)
+                        # ReusableMethod.clickXpath(driver, passwordxpath)
                         time.sleep(2)
                         ReusableMethod.clickXpath(driver, loginbuttonxpath)
                         logger.info("Logged in")
 
-
-
-
-                    except Exception as e:
-                        logger.error("Login Failed, Exception occurred" + str(e))
-
-                except Exception as e:
-                    logger.error("Password has not sent, Exception occurred" + str(e))
-
-            except Exception as e:
-                logger.error("LoginId has not sent, Exception occurred" + str(e))
-
-        except Exception as e:
-            logger.error("Link has not passed, Exception occurred" + str(e))
-
     except Exception as e:
-        logger.error("Browser has not Launched, Exception occurred" + str(e))
+        logger.error("Login Failed, Exception occurred" + str(e))
+
+    # try:
+    #     time.sleep(2)
+    #     ReusableMethod.clickXpath(driver, pinxpath)
+    #     logger.info("Module pinned")
+    #
+    # except Exception as e:
+    #     logger.error("Module has not pinned, Exception occurred" + str(e))
+
 
     return driver
+
+
+

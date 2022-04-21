@@ -32,9 +32,3 @@ for i in result:
     row += 1
 
 
-
-
-
-
-
-

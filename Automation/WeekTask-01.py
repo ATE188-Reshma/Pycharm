@@ -164,18 +164,3 @@ encrypt = Fernet(keys).encrypt(contentencode)
 print(encrypt)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
