@@ -69,6 +69,8 @@ def count(driver, loc_key, xpath):
     count = individualtext[4]
 
     print(count)
+    
+    print(" ")
 
     count = int(count)
 
