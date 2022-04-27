@@ -70,7 +70,6 @@ def count(driver, loc_key, xpath):
 
     print(count)
     
-    print(" ")
 
     count = int(count)
 
